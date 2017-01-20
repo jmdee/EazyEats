@@ -10,8 +10,94 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.jerrydengu.eazyeats.LoginActivity">
 
-    <TextView
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType=""
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="33dp"
+        android:id="@+id/Emaillogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|italic"
+        android:hint="@string/email" />
+
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/Emaillogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp"
+        android:id="@+id/Passwordlog"
+        android:textStyle="normal|bold|italic"
+        android:hint="@string/password"
+        android:textColor="?attr/actionMenuTextColor" />
+
+    <TextView
+        android:text="@string/sign_in_using"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonsignin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="57dp"
+        android:id="@+id/googleBook"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <Button
+        android:text="@string/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_toEndOf="@+id/Passwordlog"
+        android:id="@+id/facebook" />
+
+    <Button
+        android:text="@string/google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_below="@+id/googleBook"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:text="@string/don_t_have_an_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView2"
+        android:textColor="@android:color/holo_orange_dark"/>
+
+    <TextView
+        android:text="@string/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/facebook"
+        android:layout_toStartOf="@+id/facebook"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_orange_dark"/>
+
+    <Button
+        android:text="@string/sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:id="@+id/buttonsignin"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_orange_dark"
+        android:background="@drawable/button_styles"
+        android:layout_below="@+id/Passwordlog"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="15dp"/>
 </RelativeLayout>
