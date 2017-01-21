@@ -14,37 +14,6 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Firstname"
-        android:ems="10"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="148dp"
-        android:layout_marginEnd="148dp"
-        android:id="@+id/Namereg"
-        android:singleLine="true"
-        android:fontFamily="sans-serif"
-        android:textStyle="normal|bold|italic" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Lastname"
-        android:ems="10"
-        android:id="@+id/Surnamereg"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignLeft="@+id/Cityreg"
-        android:layout_alignStart="@+id/Cityreg"
-        android:textColor="?attr/actionMenuTextColor"
-        android:textStyle="normal|bold|italic" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
         android:layout_alignParentTop="true"
@@ -52,73 +21,65 @@
         android:id="@+id/Emailreg"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:text="Email"
-        android:textStyle="normal|bold|italic" />
+        android:hint="Email Address" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="City"
         android:ems="10"
         android:id="@+id/Cityreg"
         android:layout_alignBaseline="@+id/phonereg"
         android:layout_alignBottom="@+id/phonereg"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/streetReg"
-        android:layout_toEndOf="@+id/streetReg"
-        android:textStyle="normal|bold|italic" />
+        android:layout_toEndOf="@+id/phonereg"
+        android:hint="City"
+        android:layout_toRightOf="@+id/phonereg" />
+
+    <TextView
+        android:text="SIGN IN"
+        android:id="@+id/Signinreg"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignBaseline="@+id/Qnaccount"
+        android:layout_alignBottom="@+id/Qnaccount"
+        android:layout_toRightOf="@+id/Qnaccount"
+        android:layout_toEndOf="@+id/Qnaccount" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/Passwordreg"
+        android:hint="Password"
+        android:layout_below="@+id/streetReg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Street Address"
         android:ems="10"
-        android:id="@+id/streetReg"
-        android:layout_below="@+id/phonereg"
-        android:layout_alignRight="@+id/Namereg"
-        android:layout_alignEnd="@+id/Namereg"
-        android:textStyle="normal|bold|italic" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="phone"
-        android:ems="10"
-        android:id="@+id/phonereg"
-        android:text="Phone"
-        android:hint="Phone"
-        android:layout_below="@+id/Emailreg"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/Cityreg"
-        android:layout_toStartOf="@+id/Cityreg"
-        android:textStyle="normal|bold|italic" />
-
-    <TextView
-        android:text="Age"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="21dp"
-        android:id="@+id/Agereg"
-        android:textStyle="normal|bold|italic"
-        android:textAlignment="viewStart"
-        android:textSize="18sp"
-        android:textColor="@android:color/background_dark"
-        android:layout_below="@+id/streetReg"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/Namereg"
+        android:singleLine="true"
+        android:fontFamily="sans-serif"
+        android:hint="Firstname"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/Signinreg"
+        android:layout_toLeftOf="@+id/Signinreg" />
 
     <Button
         android:text="NEXT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Buttonreg"
-        android:layout_marginTop="81dp"
-        android:layout_below="@+id/Agereg"
-        android:layout_toEndOf="@+id/streetReg"
         android:elevation="0dp"
         android:fontFamily="sans-serif-medium"
         android:textColor="@android:color/holo_orange_dark"
@@ -133,31 +94,56 @@
         android:background="@drawable/button_styles"
         android:padding="15dp"
 
-            />
+        android:layout_below="@+id/Passwordreg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp" />
 
     <TextView
         android:text="Already have an account? "
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="346dp"
-        android:id="@+id/textView11"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/Agereg"
-        android:textStyle="normal|bold"
-        android:layout_toLeftOf="@+id/Buttonreg"
-        android:layout_toStartOf="@+id/Buttonreg"
-        android:textColor="@android:color/holo_orange_light" />
-
-    <TextView
-        android:text="SIGN IN"
-        android:id="@+id/Signinreg"
-        android:textStyle="normal|bold"
-        android:textColor="@android:color/holo_red_dark"
-        android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:layout_alignBaseline="@+id/textView11"
-        android:layout_alignBottom="@+id/textView11"
-        android:layout_toRightOf="@+id/textView11"
-        android:layout_toEndOf="@+id/textView11" />
+        android:layout_height="wrap_content"
+        android:id="@+id/Qnaccount"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_orange_light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/streetReg"
+        android:hint="Street Address"
+        android:layout_below="@+id/Cityreg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/phonereg"
+        android:hint="Phone Number"
+        android:layout_below="@+id/Emailreg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/Surnamereg"
+        android:textColor="?attr/actionMenuTextColor"
+        android:hint="Lastname"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/phonereg"
+        android:layout_toRightOf="@+id/phonereg" />
 
 </RelativeLayout>

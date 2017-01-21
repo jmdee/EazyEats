@@ -13,7 +13,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType=""
+        android:inputType="textEmailAddress"
         android:ems="10"
         android:layout_alignParentTop="true"
         android:layout_marginTop="33dp"
@@ -24,7 +24,7 @@
         android:hint="@string/email" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
@@ -52,19 +52,11 @@
         android:text="@string/facebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button2"
+        android:layout_alignBottom="@+id/google"
         android:layout_toEndOf="@+id/Passwordlog"
-        android:id="@+id/facebook" />
-
-    <Button
-        android:text="@string/google"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button2"
-        android:layout_below="@+id/googleBook"
+        android:id="@+id/facebook"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="32dp" />
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:text="@string/don_t_have_an_account"
@@ -73,18 +65,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/textView2"
-        android:textColor="@android:color/holo_orange_dark"/>
-
-    <TextView
-        android:text="@string/sign_up"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView3"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/facebook"
-        android:layout_toStartOf="@+id/facebook"
-        android:textStyle="normal|bold"
+        android:id="@+id/donthaveaccount"
         android:textColor="@android:color/holo_orange_dark"/>
 
     <Button
@@ -100,4 +81,29 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:padding="15dp"/>
+
+    <TextView
+        android:text="@string/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SignUpLogin"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/donthaveaccount"
+        android:layout_toEndOf="@+id/donthaveaccount"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp" />
+
+    <Button
+        android:text="@string/google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/google"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_below="@+id/googleBook"
+        android:layout_alignLeft="@+id/SignUpLogin"
+        android:layout_alignStart="@+id/SignUpLogin" />
 </RelativeLayout>
