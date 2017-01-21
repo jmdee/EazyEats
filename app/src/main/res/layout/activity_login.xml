@@ -35,7 +35,9 @@
         android:id="@+id/Passwordlog"
         android:textStyle="normal|bold|italic"
         android:hint="@string/password"
-        android:textColor="?attr/actionMenuTextColor" />
+        android:textColor="?attr/actionMenuTextColor"
+
+      />
 
     <TextView
         android:text="@string/sign_in_using"
