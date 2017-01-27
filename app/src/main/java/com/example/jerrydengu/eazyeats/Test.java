@@ -3,11 +3,11 @@ package com.example.jerrydengu.eazyeats;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MenuPageActivity extends AppCompatActivity {
+public class Test extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_page);
+        setContentView(R.layout.activity_test);
     }
 }

@@ -33,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Intent registerIntent = new Intent(LoginActivity.this , RegisterActivity.class);
+                Intent registerIntent = new Intent(LoginActivity.this ,MainActivity.class);
                 LoginActivity.this.startActivity(registerIntent);
 
             }
@@ -52,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
                         if(success){
                             String name = jsonResponse.getString("name");
                             String surname = jsonResponse.getString("surname");
-                            Intent intent = new Intent(LoginActivity.this,MenuPageActivity.class);
+                            Intent intent = new Intent(LoginActivity.this,LoginRequest.class);
                             LoginActivity.this.startActivity(intent);
                         }else{
                             AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);

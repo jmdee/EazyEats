@@ -8,4 +8,11 @@
     <string name="google">Google</string>
     <string name="sign_up">SIGN UP</string>
     <string name="sign_in_using">Sign in using</string>
+    <string name="title_activity_menu_tab">MenuTabActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+    <string name="title_activity_app_main_menu">AppMainMenu</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>
