@@ -29,5 +29,6 @@ public class Tab1Cuisines extends Fragment  {
         return rootView;
 
 
+
     }
 }

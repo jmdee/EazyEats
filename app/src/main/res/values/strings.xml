@@ -15,4 +15,5 @@
     <string name="title_activity_main_menu">MainMenuActivity</string>
     <string name="title_activity_app_main_menu">AppMainMenu</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="popular">Popular</string>
 </resources>
