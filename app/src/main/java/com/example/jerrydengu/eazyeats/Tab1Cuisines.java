@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.content.Intent;
 import android.support.v7.app.AlertDialog;
@@ -27,6 +28,7 @@ public class Tab1Cuisines extends Fragment  {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.tab1cuisines, container, false);
         return rootView;
+
 
 
 
