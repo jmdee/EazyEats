@@ -23,20 +23,6 @@
         android:layout_alignParentStart="true"
         android:hint="Email Address" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/Cityreg"
-        android:layout_alignBaseline="@+id/phonereg"
-        android:layout_alignBottom="@+id/phonereg"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/phonereg"
-        android:hint="City"
-        android:layout_toRightOf="@+id/phonereg" />
-
     <TextView
         android:text="SIGN IN"
         android:id="@+id/Signinreg"
@@ -74,30 +60,6 @@
         android:layout_alignParentTop="true"
         android:layout_toStartOf="@+id/Signinreg"
         android:layout_toLeftOf="@+id/Signinreg" />
-
-    <Button
-        android:text="NEXT"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/Buttonreg"
-        android:elevation="0dp"
-        android:fontFamily="sans-serif-medium"
-        android:textColor="@android:color/holo_orange_dark"
-        android:textStyle="normal|bold|italic"
-        android:textAllCaps="false"
-        android:textAlignment="center"
-        android:visibility="visible"
-        android:bottomRightRadius="10dp"
-        android:bottomLeftRadius="10dp"
-        android:topLeftRadius="10dp"
-        android:topRightRadius="10dp"
-        android:background="@drawable/button_styles"
-        android:padding="15dp"
-
-        android:layout_below="@+id/Passwordreg"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="33dp" />
 
     <TextView
         android:text="Already have an account? "
@@ -140,10 +102,46 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/Surnamereg"
-        android:textColor="?attr/actionMenuTextColor"
+        android:textColor="#ffffff"
         android:hint="Lastname"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/phonereg"
         android:layout_toRightOf="@+id/phonereg" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/Cityreg"
+        android:hint="City"
+        android:layout_alignBaseline="@+id/phonereg"
+        android:layout_alignBottom="@+id/phonereg"
+        android:layout_toRightOf="@+id/Namereg"
+        android:layout_toEndOf="@+id/Namereg" />
+
+    <Button
+        android:text="NEXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Buttonreg"
+        android:elevation="0dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="normal|bold|italic"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:visibility="visible"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:background="@drawable/button_styles"
+        android:padding="15dp"
+
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/Passwordreg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

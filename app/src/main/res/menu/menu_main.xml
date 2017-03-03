@@ -2,9 +2,37 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.jerrydengu.eazyeats.MainActivity">
+
+
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="@string/action_settings"
-        app:showAsAction="never" />
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/shoping_cart"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/more_but"
+        android:showAsAction="always"
+        android:title=""
+        android:icon="@drawable/ic_expand_more_black_24dp"/>
+    <item
+        android:id="@+id/menu_black"
+        android:title=""
+        android:icon="@drawable/ic_menu_black_24dp"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/search_items"
+        android:title=""
+        android:icon="@drawable/ic_search_black_24dp"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/microphone"
+        android:icon="@drawable/ic_mic_none_black_24dp"
+        android:title=""
+        android:showAsAction="always"/>
+
 </menu>
