@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
                 case 1:
                     return "OUTLETS";
                 case 2:
-                    return "FAVOURITES";
+                    return "BOOKINGS";
             }
             return null;
         }

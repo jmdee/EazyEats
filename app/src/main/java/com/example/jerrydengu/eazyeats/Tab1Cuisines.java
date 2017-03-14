@@ -33,8 +33,8 @@ public class Tab1Cuisines extends Fragment  {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.tab1cuisines, container, false);
-        RecyclerView vr = (RecyclerView) rootView.findViewById(R.id.cuisinerview);
-        setupRecyclerView(vr);
+     //   RecyclerView vr = (RecyclerView) rootView.findViewById(R.id.cuisinerview);
+       // setupRecyclerView(vr);
         return rootView;
 
 
